@@ -3,9 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>API Revision</title>
+    <link rel="stylesheet" href="revision style.css" />
   </head>
   <body>
-    <h1>hello</h1>
+    <div class="title">API Revision</div>
+
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city"
+          required
+          class="search-input"
+          id="search-input"
+        />
+
+        <input type="submit" value="Search" class="button" />
+      </form>
+      <main>
+        <div class="current-weather">
+          <div class="city-date">
+            <h1 class="current-city" id="current-city">Kuala Lumpur</h1>
+            <h2 class="now"></h2>
+            <h3></h3>
+          </div>
+          <div class="temperature">
+            <span class="temperature-value" id="temperature-value">24</span>
+            <span class="temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        This project was coded by
+        <a href="#" target="_blank">Zaidah Yunos</a> and is
+        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+
+    <script src="revision script.js"></script>
   </body>
 </html>
